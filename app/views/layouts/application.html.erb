@@ -8,6 +8,18 @@
 </head>
 <body>
 
+<h1>ENV</h1>
+<table border="1" cellpadding="10">
+  <tbody>
+    <% ENV.each do |k,v| %>
+      <tr>
+        <td><%= k %></td>
+        <td><%= v %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
 <%= yield %>
 
 </body>
