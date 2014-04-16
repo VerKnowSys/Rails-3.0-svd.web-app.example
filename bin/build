@@ -4,4 +4,7 @@
 #ENVIRONMENT
 # svd end
 
-bundle exec rake db:seed
+if [ "${RUBY_ENV}" = "development" ]; then
+    echo "Invoking db:seed for domain: ${RUBY_DOMAIN} with environment: ${RUBY_ENV}"
+    bundle exec rake db:seed >> ${RUBY_LOG_FILE}
+fi
