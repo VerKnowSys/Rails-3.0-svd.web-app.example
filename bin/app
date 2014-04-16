@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# svd init
+#ENVIRONMENT
+# svd end
+
+bundle exec rails s -p ${RUBY_PORT} -e ${RUBY_ENV} -b 127.0.0.1 -P ${RUBY_PID_FILE}
