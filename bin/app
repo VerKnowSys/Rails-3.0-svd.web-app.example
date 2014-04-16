@@ -4,5 +4,5 @@
 #ENVIRONMENT
 # svd end
 
-which rails || sofin export rails Ruby19
+cd ${RUBY_ROOT}
 bundle exec rails s -p ${RUBY_PORT} -e ${RUBY_ENV} -b 127.0.0.1 -P ${RUBY_PID_FILE}
